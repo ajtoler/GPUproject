@@ -1,0 +1,147 @@
+Host:   AMD EPYC 7352 24-Core Processor
+Create pointers and allocate matrices
+Fill in matrices
+Use the first device
+Device: Tesla T4
+Matrix A:
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Matrix B:
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Testing VectorAddKernel with scalar indices with a grid of (1024) blocks x (1024) threads x (1) elements
+Stenciled matrix A:
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 13 13 13 13 13 13 13 
+1 1 1 13 13 13 13 13 13 13 
+1 1 1 13 13 13 13 13 13 13 
+1 1 1 13 13 13 13 13 13 13 
+1 1 1 13 13 13 13 13 13 13 
+1 1 1 13 13 13 13 13 13 13 
+1 1 1 13 13 13 13 13 13 13 
+stencil_2d Passed
+Stenciled matrix B:
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 13 13 13 13 13 13 13 
+1 1 1 13 13 13 13 13 13 13 
+1 1 1 13 13 13 13 13 13 13 
+1 1 1 13 13 13 13 13 13 13 
+1 1 1 13 13 13 13 13 13 13 
+1 1 1 13 13 13 13 13 13 13 
+1 1 1 13 13 13 13 13 13 13 
+stencil_2d Passed
+Dot product matrix C:
+518 518 518 6662 6662 6662 6662 6662 6662 6662 
+518 518 518 6662 6662 6662 6662 6662 6662 6662 
+518 518 518 6662 6662 6662 6662 6662 6662 6662 
+6662 6662 6662 86534 86534 86534 86534 86534 86534 86534 
+6662 6662 6662 86534 86534 86534 86534 86534 86534 86534 
+6662 6662 6662 86534 86534 86534 86534 86534 86534 86534 
+6662 6662 6662 86534 86534 86534 86534 86534 86534 86534 
+6662 6662 6662 86534 86534 86534 86534 86534 86534 86534 
+6662 6662 6662 86534 86534 86534 86534 86534 86534 86534 
+6662 6662 6662 86534 86534 86534 86534 86534 86534 86534 
+dot_product Passed
+Finished!
+Collecting data...
+Generating '/tmp/nsys-report-ed83.qdstrm'
+[1/8] [0%                          ] project_cpu_alpaka.nsys-rep[1/8] [0%                          ] project_cpu_alpaka.nsys-rep[1/8] [5%                          ] project_cpu_alpaka.nsys-rep[1/8] [6%                          ] project_cpu_alpaka.nsys-rep[1/8] [5%                          ] project_cpu_alpaka.nsys-rep[1/8] [6%                          ] project_cpu_alpaka.nsys-rep[1/8] [5%                          ] project_cpu_alpaka.nsys-rep[1/8] [5%                          ] project_cpu_alpaka.nsys-rep[1/8] [5%                          ] project_cpu_alpaka.nsys-rep[1/8] [6%                          ] project_cpu_alpaka.nsys-rep[1/8] [5%                          ] project_cpu_alpaka.nsys-rep[1/8] [5%                          ] project_cpu_alpaka.nsys-rep[1/8] [5%                          ] project_cpu_alpaka.nsys-rep[1/8] [9%                          ] project_cpu_alpaka.nsys-rep[1/8] [10%                         ] project_cpu_alpaka.nsys-rep[1/8] [11%                         ] project_cpu_alpaka.nsys-rep[1/8] [12%                         ] project_cpu_alpaka.nsys-rep[1/8] [13%                         ] project_cpu_alpaka.nsys-rep[1/8] [==18%                       ] project_cpu_alpaka.nsys-rep[1/8] [===22%                      ] project_cpu_alpaka.nsys-rep[1/8] [====27%                     ] project_cpu_alpaka.nsys-rep[1/8] [=====32%                    ] project_cpu_alpaka.nsys-rep[1/8] [=======36%                  ] project_cpu_alpaka.nsys-rep[1/8] [========41%                 ] project_cpu_alpaka.nsys-rep[1/8] [=========45%                ] project_cpu_alpaka.nsys-rep[1/8] [===========50%              ] project_cpu_alpaka.nsys-rep[1/8] [===========51%              ] project_cpu_alpaka.nsys-rep[1/8] [===========52%              ] project_cpu_alpaka.nsys-rep[1/8] [===========53%              ] project_cpu_alpaka.nsys-rep[1/8] [============54%             ] project_cpu_alpaka.nsys-rep[1/8] [============55%             ] project_cpu_alpaka.nsys-rep[1/8] [============56%             ] project_cpu_alpaka.nsys-rep[1/8] [============57%             ] project_cpu_alpaka.nsys-rep[1/8] [=============58%            ] project_cpu_alpaka.nsys-rep[1/8] [=============59%            ] project_cpu_alpaka.nsys-rep[1/8] [=============60%            ] project_cpu_alpaka.nsys-rep[1/8] [==============61%           ] project_cpu_alpaka.nsys-rep[1/8] [==============62%           ] project_cpu_alpaka.nsys-rep[1/8] [==============63%           ] project_cpu_alpaka.nsys-rep[1/8] [==============64%           ] project_cpu_alpaka.nsys-rep[1/8] [===============65%          ] project_cpu_alpaka.nsys-rep[1/8] [===============66%          ] project_cpu_alpaka.nsys-rep[1/8] [===============67%          ] project_cpu_alpaka.nsys-rep[1/8] [================68%         ] project_cpu_alpaka.nsys-rep[1/8] [================69%         ] project_cpu_alpaka.nsys-rep[1/8] [================70%         ] project_cpu_alpaka.nsys-rep[1/8] [================71%         ] project_cpu_alpaka.nsys-rep[1/8] [=================72%        ] project_cpu_alpaka.nsys-rep[1/8] [=================73%        ] project_cpu_alpaka.nsys-rep[1/8] [=================74%        ] project_cpu_alpaka.nsys-rep[1/8] [==================75%       ] project_cpu_alpaka.nsys-rep[1/8] [==================76%       ] project_cpu_alpaka.nsys-rep[1/8] [==================77%       ] project_cpu_alpaka.nsys-rep[1/8] [==================78%       ] project_cpu_alpaka.nsys-rep[1/8] [===================79%      ] project_cpu_alpaka.nsys-rep[1/8] [===================80%      ] project_cpu_alpaka.nsys-rep[1/8] [===================81%      ] project_cpu_alpaka.nsys-rep[1/8] [===================82%      ] project_cpu_alpaka.nsys-rep[1/8] [====================83%     ] project_cpu_alpaka.nsys-rep[1/8] [====================84%     ] project_cpu_alpaka.nsys-rep[1/8] [====================85%     ] project_cpu_alpaka.nsys-rep[1/8] [=====================86%    ] project_cpu_alpaka.nsys-rep[1/8] [=====================87%    ] project_cpu_alpaka.nsys-rep[1/8] [=====================88%    ] project_cpu_alpaka.nsys-rep[1/8] [=====================89%    ] project_cpu_alpaka.nsys-rep[1/8] [======================90%   ] project_cpu_alpaka.nsys-rep[1/8] [======================91%   ] project_cpu_alpaka.nsys-rep[1/8] [======================92%   ] project_cpu_alpaka.nsys-rep[1/8] [=======================93%  ] project_cpu_alpaka.nsys-rep[1/8] [=======================94%  ] project_cpu_alpaka.nsys-rep[1/8] [=======================95%  ] project_cpu_alpaka.nsys-rep[1/8] [=======================96%  ] project_cpu_alpaka.nsys-rep[1/8] [========================97% ] project_cpu_alpaka.nsys-rep[1/8] [========================98% ] project_cpu_alpaka.nsys-rep[1/8] [========================99% ] project_cpu_alpaka.nsys-rep[1/8] [========================100%] project_cpu_alpaka.nsys-rep[1/8] [========================100%] project_cpu_alpaka.nsys-rep
+[2/8] [0%                          ] project_cpu_alpaka.sqlite[2/8] [1%                          ] project_cpu_alpaka.sqlite[2/8] [2%                          ] project_cpu_alpaka.sqlite[2/8] [3%                          ] project_cpu_alpaka.sqlite[2/8] [4%                          ] project_cpu_alpaka.sqlite[2/8] [5%                          ] project_cpu_alpaka.sqlite[2/8] [6%                          ] project_cpu_alpaka.sqlite[2/8] [7%                          ] project_cpu_alpaka.sqlite[2/8] [8%                          ] project_cpu_alpaka.sqlite[2/8] [9%                          ] project_cpu_alpaka.sqlite[2/8] [10%                         ] project_cpu_alpaka.sqlite[2/8] [11%                         ] project_cpu_alpaka.sqlite[2/8] [12%                         ] project_cpu_alpaka.sqlite[2/8] [13%                         ] project_cpu_alpaka.sqlite[2/8] [14%                         ] project_cpu_alpaka.sqlite[2/8] [=15%                        ] project_cpu_alpaka.sqlite[2/8] [=16%                        ] project_cpu_alpaka.sqlite[2/8] [=17%                        ] project_cpu_alpaka.sqlite[2/8] [==18%                       ] project_cpu_alpaka.sqlite[2/8] [==19%                       ] project_cpu_alpaka.sqlite[2/8] [==20%                       ] project_cpu_alpaka.sqlite[2/8] [==21%                       ] project_cpu_alpaka.sqlite[2/8] [===22%                      ] project_cpu_alpaka.sqlite[2/8] [===23%                      ] project_cpu_alpaka.sqlite[2/8] [===24%                      ] project_cpu_alpaka.sqlite[2/8] [====25%                     ] project_cpu_alpaka.sqlite[2/8] [====26%                     ] project_cpu_alpaka.sqlite[2/8] [====27%                     ] project_cpu_alpaka.sqlite[2/8] [====28%                     ] project_cpu_alpaka.sqlite[2/8] [=====29%                    ] project_cpu_alpaka.sqlite[2/8] [=====30%                    ] project_cpu_alpaka.sqlite[2/8] [=====31%                    ] project_cpu_alpaka.sqlite[2/8] [=====32%                    ] project_cpu_alpaka.sqlite[2/8] [======33%                   ] project_cpu_alpaka.sqlite[2/8] [======34%                   ] project_cpu_alpaka.sqlite[2/8] [======35%                   ] project_cpu_alpaka.sqlite[2/8] [=======36%                  ] project_cpu_alpaka.sqlite[2/8] [=======37%                  ] project_cpu_alpaka.sqlite[2/8] [=======38%                  ] project_cpu_alpaka.sqlite[2/8] [=======39%                  ] project_cpu_alpaka.sqlite[2/8] [========40%                 ] project_cpu_alpaka.sqlite[2/8] [========41%                 ] project_cpu_alpaka.sqlite[2/8] [========42%                 ] project_cpu_alpaka.sqlite[2/8] [=========43%                ] project_cpu_alpaka.sqlite[2/8] [=========44%                ] project_cpu_alpaka.sqlite[2/8] [=========45%                ] project_cpu_alpaka.sqlite[2/8] [=========46%                ] project_cpu_alpaka.sqlite[2/8] [==========47%               ] project_cpu_alpaka.sqlite[2/8] [==========48%               ] project_cpu_alpaka.sqlite[2/8] [==========49%               ] project_cpu_alpaka.sqlite[2/8] [===========50%              ] project_cpu_alpaka.sqlite[2/8] [===========51%              ] project_cpu_alpaka.sqlite[2/8] [===========52%              ] project_cpu_alpaka.sqlite[2/8] [===========53%              ] project_cpu_alpaka.sqlite[2/8] [============54%             ] project_cpu_alpaka.sqlite[2/8] [============55%             ] project_cpu_alpaka.sqlite[2/8] [============56%             ] project_cpu_alpaka.sqlite[2/8] [============57%             ] project_cpu_alpaka.sqlite[2/8] [=============58%            ] project_cpu_alpaka.sqlite[2/8] [=============59%            ] project_cpu_alpaka.sqlite[2/8] [=============60%            ] project_cpu_alpaka.sqlite[2/8] [==============61%           ] project_cpu_alpaka.sqlite[2/8] [==============62%           ] project_cpu_alpaka.sqlite[2/8] [==============63%           ] project_cpu_alpaka.sqlite[2/8] [==============64%           ] project_cpu_alpaka.sqlite[2/8] [===============65%          ] project_cpu_alpaka.sqlite[2/8] [===============66%          ] project_cpu_alpaka.sqlite[2/8] [===============67%          ] project_cpu_alpaka.sqlite[2/8] [================68%         ] project_cpu_alpaka.sqlite[2/8] [================69%         ] project_cpu_alpaka.sqlite[2/8] [================70%         ] project_cpu_alpaka.sqlite[2/8] [================71%         ] project_cpu_alpaka.sqlite[2/8] [=================72%        ] project_cpu_alpaka.sqlite[2/8] [=================73%        ] project_cpu_alpaka.sqlite[2/8] [=================74%        ] project_cpu_alpaka.sqlite[2/8] [==================75%       ] project_cpu_alpaka.sqlite[2/8] [==================76%       ] project_cpu_alpaka.sqlite[2/8] [==================77%       ] project_cpu_alpaka.sqlite[2/8] [==================78%       ] project_cpu_alpaka.sqlite[2/8] [===================79%      ] project_cpu_alpaka.sqlite[2/8] [===================80%      ] project_cpu_alpaka.sqlite[2/8] [===================81%      ] project_cpu_alpaka.sqlite[2/8] [===================82%      ] project_cpu_alpaka.sqlite[2/8] [====================83%     ] project_cpu_alpaka.sqlite[2/8] [====================84%     ] project_cpu_alpaka.sqlite[2/8] [====================85%     ] project_cpu_alpaka.sqlite[2/8] [=====================86%    ] project_cpu_alpaka.sqlite[2/8] [=====================87%    ] project_cpu_alpaka.sqlite[2/8] [=====================88%    ] project_cpu_alpaka.sqlite[2/8] [=====================89%    ] project_cpu_alpaka.sqlite[2/8] [======================90%   ] project_cpu_alpaka.sqlite[2/8] [======================91%   ] project_cpu_alpaka.sqlite[2/8] [======================92%   ] project_cpu_alpaka.sqlite[2/8] [=======================93%  ] project_cpu_alpaka.sqlite[2/8] [=======================94%  ] project_cpu_alpaka.sqlite[2/8] [=======================95%  ] project_cpu_alpaka.sqlite[2/8] [=======================96%  ] project_cpu_alpaka.sqlite[2/8] [========================97% ] project_cpu_alpaka.sqlite[2/8] [========================98% ] project_cpu_alpaka.sqlite[2/8] [========================99% ] project_cpu_alpaka.sqlite[2/8] [========================100%] project_cpu_alpaka.sqlite[2/8] [========================100%] project_cpu_alpaka.sqlite
+[3/8] Executing 'nvtx_sum' stats report
+[4/8] Executing 'osrt_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)      Med (ns)    Min (ns)   Max (ns)    StdDev (ns)            Name         
+ --------  ---------------  ---------  ------------  ------------  --------  -----------  ------------  ----------------------
+     99.9  733,608,860,255     36,695  19,992,066.0  10,104,258.0     3,180  652,916,072  28,274,156.4  poll                  
+      0.1      443,832,900      1,095     405,326.8     274,996.0     1,800   48,369,389   1,668,634.5  ioctl                 
+      0.0       11,447,557         30     381,585.2      34,491.0    26,580    8,513,682   1,540,624.2  mmap64                
+      0.0        6,767,572         26     260,291.2      42,016.0     6,690    1,207,477     439,689.9  mmap                  
+      0.0        1,399,042          2     699,521.0     699,521.0   662,505      736,537      52,348.5  pthread_create        
+      0.0        1,386,641          6     231,106.8      28,441.0     6,130    1,254,388     501,681.4  fread                 
+      0.0        1,169,959         45      25,999.1      14,280.0     5,420      141,463      27,435.9  fopen                 
+      0.0        1,017,782         10     101,778.2      89,537.0    53,621      149,733      34,620.8  sem_timedwait         
+      0.0          910,265         55      16,550.3      13,040.0     8,260       46,941       8,564.6  open64                
+      0.0          834,888         54      15,460.9       1,410.0     1,001      420,729      72,235.3  fcntl                 
+      0.0          339,326         41       8,276.2       5,820.0     2,960       88,362      13,146.6  fclose                
+      0.0          284,166          1     284,166.0     284,166.0   284,166      284,166           0.0  pthread_cond_wait     
+      0.0          245,627          4      61,406.8      19,681.0    18,620      187,645      84,160.4  fgets                 
+      0.0           96,766         12       8,063.8       9,165.5     1,860       13,300       3,543.8  write                 
+      0.0           95,212          6      15,868.7      15,855.0     6,610       24,171       6,522.1  open                  
+      0.0           69,381          2      34,690.5      34,690.5    32,660       36,721       2,871.6  socket                
+      0.0           62,411         15       4,160.7       4,280.0     1,820        7,780       1,783.4  read                  
+      0.0           61,821          3      20,607.0      18,140.0    17,500       26,181       4,837.8  munmap                
+      0.0           54,411          3      18,137.0      21,370.0    10,941       22,100       6,242.6  pipe2                 
+      0.0           38,300          5       7,660.0       2,710.0     1,280       26,930      10,875.6  fwrite                
+      0.0           31,871          1      31,871.0      31,871.0    31,871       31,871           0.0  connect               
+      0.0           28,530          3       9,510.0       9,480.0     9,370        9,680         157.2  fopen64               
+      0.0           24,641          1      24,641.0      24,641.0    24,641       24,641           0.0  fflush                
+      0.0           10,120          2       5,060.0       5,060.0     4,210        5,910       1,202.1  pthread_cond_broadcast
+      0.0            7,040          3       2,346.7       2,340.0     2,060        2,640         290.1  pthread_mutex_trylock 
+      0.0            4,980          1       4,980.0       4,980.0     4,980        4,980           0.0  bind                  
+      0.0            2,770          1       2,770.0       2,770.0     2,770        2,770           0.0  listen                
+      0.0            2,230          2       1,115.0       1,115.0     1,100        1,130          21.2  dup                   
+      0.0            1,080          1       1,080.0       1,080.0     1,080        1,080           0.0  pthread_cond_signal   
+
+[5/8] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls      Avg (ns)        Med (ns)    Min (ns)      Max (ns)         StdDev (ns)               Name           
+ --------  ---------------  ---------  -----------------  -----------  ---------  ---------------  -----------------  -------------------------
+     99.9  400,869,980,026          3  133,623,326,675.3    466,811.0    254,135  400,869,259,080  231,441,766,520.5  cudaStreamSynchronize    
+      0.1      306,725,287          5       61,345,057.4  3,212,463.0  3,111,560      293,992,700      130,053,997.9  cudaHostAlloc            
+      0.0       14,920,067          5        2,984,013.4      6,460.0      1,890       14,901,266        6,661,947.3  cudaMallocAsync_v11020   
+      0.0       12,402,910          3        4,134,303.3     71,852.0      7,870       12,323,188        7,091,854.3  cudaLaunchKernel         
+      0.0        7,829,127          5        1,565,825.4  1,464,913.0  1,350,211        2,075,227          297,625.8  cudaFreeHost             
+      0.0          117,964          5           23,592.8     15,690.0      6,491           69,031           25,846.8  cudaMemcpyAsync          
+      0.0           85,722          1           85,722.0     85,722.0     85,722           85,722                0.0  cudaStreamCreate         
+      0.0           85,062          3           28,354.0      9,810.0      7,321           67,931           34,297.3  cudaMemsetAsync          
+      0.0           78,042          5           15,608.4      2,890.0      1,440           68,022           29,313.4  cudaFreeAsync_v11020     
+      0.0           74,671          2           37,335.5     37,335.5     26,130           48,541           15,847.0  cudaStreamDestroy        
+      0.0            9,571          1            9,571.0      9,571.0      9,571            9,571                0.0  cudaStreamCreateWithFlags
+      0.0            1,580          1            1,580.0      1,580.0      1,580            1,580                0.0  cuModuleGetLoadingMode   
+
+[6/8] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances      Avg (ns)           Med (ns)          Min (ns)         Max (ns)      StdDev (ns)                                                  Name                                                
+ --------  ---------------  ---------  -----------------  -----------------  ---------------  ---------------  -----------  ----------------------------------------------------------------------------------------------------
+    100.0  400,869,093,339          1  400,869,093,339.0  400,869,093,339.0  400,869,093,339  400,869,093,339          0.0  void alpaka::detail::gpuKernel<dot_product, alpaka::ApiCudaRt, alpaka::AccGpuUniformCudaHipRt<alpak…
+      0.0           91,743          2           45,871.5           45,871.5           45,663           46,080        294.9  void alpaka::detail::gpuKernel<stencil_2d, alpaka::ApiCudaRt, alpaka::AccGpuUniformCudaHipRt<alpaka…
+
+[7/8] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)           Operation          
+ --------  ---------------  -----  --------  --------  --------  --------  -----------  ----------------------------
+     58.8          277,437      3  92,479.0  91,807.0    91,743    93,887      1,219.8  [CUDA memcpy Device-to-Host]
+     38.2          180,189      2  90,094.5  90,094.5    85,023    95,166      7,172.2  [CUDA memcpy Host-to-Device]
+      3.0           13,953      3   4,651.0   4,641.0     4,288     5,024        368.1  [CUDA memset]               
+
+[8/8] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)           Operation          
+ ----------  -----  --------  --------  --------  --------  -----------  ----------------------------
+      3.220      3     1.073     1.073     1.073     1.073        0.000  [CUDA memcpy Device-to-Host]
+      3.220      3     1.073     1.073     1.073     1.073        0.000  [CUDA memset]               
+      2.147      2     1.073     1.073     1.073     1.073        0.000  [CUDA memcpy Host-to-Device]
+
+Generated:
+    /afs/hep.wisc.edu/user/atoler/GPUproject/project_cpu_alpaka.nsys-rep
+    /afs/hep.wisc.edu/user/atoler/GPUproject/project_cpu_alpaka.sqlite
